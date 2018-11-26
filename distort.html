@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Distort</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Sunflower:500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<!-- <div onclick="tester()" class="upload-icon">
+			<h2 class="material-icons">upload_file</h2>
+		</div>
+
+		<div class="import-svg">
+			<h3>Import SVG</h3>
+			<form onsubmit="testFunction()">
+				<textarea rows="4" cols="50" placeholder="Paste SVG code here."></textarea>
+			</form>
+			<h3 class="sub material-icons">check</h3>
+		</div> -->
+
+		<div class="svg-container">
+			<!-- SVG[start] -->
+			<svg width="100%" height="80%" viewBox="0 0 400 400">
+					<path d="M200,75c33.389,0,64.778,13.002,88.388,36.612C311.998,135.221,325,166.611,325,200s-13.002,64.778-36.612,88.388
+					C264.778,311.998,233.389,325,200,325s-64.779-13.002-88.388-36.612C88.002,264.778,75,233.389,75,200s13.002-64.779,36.612-88.388
+					S166.611,75,200,75 M200,25c-96.65,0-175,78.35-175,175c0,96.649,78.35,175,175,175c96.649,0,175-78.351,175-175
+					C375,103.35,296.649,25,200,25L200,25z"/>
+			</svg>
+			<!-- SVG[end] -->
+		</div>
+
+		<div class="user-control">
+			<h2 style="font-weight: bold" class="btn material-icons" onclick="distort()">play_arrow</h2>
+			<h2 style="font-weight: bold" class="btn material-icons" value="Refresh Page" onclick="window.location.href=window.location.href">replay</h2>
+			<!-- <h3>Coordinates to Distort: <input type="text" id="user-input" onchange="userI()"></h3> -->
+			<!-- <h3 style="align-self: center; justify-self: center">Distortion >></h3> -->
+			<h3 class="mild" onclick="mild()">Mild</h3>
+			<h3 class="medium active-variance" onclick="medium()">Medium</h3>
+			<h3 class="extreme" onclick="extreme()">Extreme</h3>
+			<!-- <h3 class="custom">Custom: <input type="text" id="user-variance" onchange=""></h3> -->
+		</div>
+	</div>
+</body>
+
+<script>
+
+	let mildAdd = document.getElementsByClassName('mild')[0];
+	let mediumAdd = document.getElementsByClassName('medium')[0];
+	let extremeAdd = document.getElementsByClassName('extreme')[0];
+
+	const testFunction = () => {
+		console.log(event.target.value);
+		// console.log(document.getElementsByTagName('textarea'));
+	}
+
+
+	/*  ______
+		Notifies the user of how many coordinates of the svg will be distorted.
+		______*/
+	
+	// document.getElementById("user-input").value = userInput;
+
+	/*  ______
+		This selects all child tags of the <svg> tag. 
+		It does NOT select the svg coordinates/attributes.
+		______*/
+
+	let svg = document.querySelector('svg').childNodes;
+	
+	/* 	______
+		The distort() function defines the path attribute/coordinates as a variable.
+		Then it is split into an array followed up with a forEach on it with randomizer()
+		as an argument. It's joined together into a single string.
+		Finally, the original <path> attribute is replaced with the new path coordinates.
+		______*/
+
+	function distort() {
+		
+		for (let i = 0; i < svg.length; i++) {
+			if (svg[i].nodeName === "path") {
+				let d = svg[i].getAttribute('d');
+				// console.log(Math.floor(d.length / 5));
+				d = d.split(',');
+				d.forEach(cleaner);
+				d.some(randomizer);
+				d = d.join(',');
+				svg[i].setAttribute("d", d);
+				counter = 0;
+				iRay = [];
+			}
+		}
+
+	}
+	
+</script>
+
+</html>
