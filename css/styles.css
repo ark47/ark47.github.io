@@ -29,7 +29,7 @@ html {
 }
 
 .icons-social i {
-	font-size: 3em;
+	font-size: 2em;
 }
 
 /* Custom Styles */
@@ -47,14 +47,24 @@ main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
 }
 
 main > .tagline {
-	font-size: 1.5rem;
-	margin: 1.5rem 0;
+	font-size: 1rem;
+	margin: 0;
 	font-weight: 100;
 	letter-spacing: 1px;
+}
+
+.break {
+	width: 10rem;
+	height: 2px;
+	background-color: #FAFAFA;
+	text-align: center;
+	margin: 1.25rem auto 0 auto;
 }
 
 .icons-social i {
@@ -75,8 +85,12 @@ main > .tagline {
 /* Theme */
 
 main {
-	background: #485564;
+	background-color: #485564;
 	color: #FAFAFA;
+	background-image: url(../assets/eagle.svg);
+	background-position: center 40%;
+	background-repeat: no-repeat; 
+	background-size: 80%;
 }
 
 .icons-social a {
@@ -94,15 +108,30 @@ a:hover {
 
 /* Projects */
 
+.current {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	background: #3a4653;
+	padding: .5rem;
+}
+
+.current h2 {
+	font-size: .8rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
 .project {
 	cursor: pointer;
 	display: inline-block;
 }
 
 .project svg {
-	margin-bottom: -0.20rem;
-	margin-left: 0.675rem;;
-	width: 4.65rem;
+	margin: .5rem .25rem 0 .25rem;
+	width: 2rem;
 }
 
 .project path {
@@ -112,4 +141,12 @@ a:hover {
 
 .project:hover path {
 	fill: greenyellow;
+}
+
+.project-break {
+	width: 90%;
+	height: 2px;
+	background-color: #FAFAFA;
+	text-align: center;
+	margin: .5rem auto 0 auto;
 }
