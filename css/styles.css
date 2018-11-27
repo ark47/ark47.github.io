@@ -150,3 +150,23 @@ a:hover {
 	text-align: center;
 	margin: .5rem auto 0 auto;
 }
+
+@media (max-height: 399px) {
+	.project-break {
+		width: 1px;
+		display: inline-block;
+		margin: 0;
+		text-align: left;
+		height: 24px;
+		margin: 0 5px 0 10px;
+	}
+
+	.current {
+		background: none;
+	}
+
+	.current h2 {
+		display: inline-block;
+		text-align: left;
+	}
+}
