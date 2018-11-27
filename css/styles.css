@@ -104,6 +104,7 @@ main {
 
 a:hover {
 	color: greenyellow;
+	text-shadow: black 1px 1px 1px;
 }
 
 /* Projects */
@@ -137,6 +138,10 @@ a:hover {
 .project path {
 	fill: #FAFAFA;
 	transition: .5s;
+}
+
+.project:hover svg {
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,1));
 }
 
 .project:hover path {
