@@ -151,7 +151,7 @@ a:hover {
 	margin: .5rem auto 0 auto;
 }
 
-@media (max-height: 399px) {
+@media (max-height: 559px) {
 	.project-break {
 		width: 1px;
 		display: inline-block;
