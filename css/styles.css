@@ -113,7 +113,7 @@ a:hover {
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	transform: translateX(-50%);
+	transform: translate(-50%, 0%);
 	background: #3a4653;
 	padding: .5rem;
 }
