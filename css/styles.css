@@ -75,11 +75,27 @@ main > .tagline {
 	margin-bottom: -0.20rem;
 }
 
-.devto svg {
+.devto svg, .hackerrank svg {
 	margin-bottom: -0.20rem;
 	margin-left: 0.675rem;;
-	width: 2.65rem;
-	height: 2.65rem;
+	width: 2em;
+}
+
+.hackerrank {
+	padding: 10px 10px 10px 0;
+}
+
+.hackerrank:hover svg {
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,1));
+}
+
+.hackerrank path {
+	fill: #FAFAFA;
+	transition: .3s;
+}
+
+.hackerrank:hover path {
+	fill: greenyellow;
 }
 
 /* Theme */
