@@ -112,7 +112,7 @@ a:hover {
 .current {
 	position: absolute;
 	left: 50%;
-	bottom: 0;
+	top: 0;
 	transform: translate(-50%, 0%);
 	background: #3a4653;
 	padding: .5rem;
