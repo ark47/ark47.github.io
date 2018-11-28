@@ -95,7 +95,7 @@ main {
 
 .icons-social a {
 	color: #FAFAFA;
-	transition: .5s;
+	transition: .3s;
 }
 
 .icons-social a svg path {
@@ -137,7 +137,7 @@ a:hover {
 
 .project path {
 	fill: #FAFAFA;
-	transition: .5s;
+	transition: .3s;
 }
 
 .project:hover svg {
