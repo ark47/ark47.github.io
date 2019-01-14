@@ -86,8 +86,12 @@ main > .tagline {
 	padding: 10px 10px 10px 0;
 }
 
+.hackerrank svg {
+	transition: 0.2s;
+}
+
 .hackerrank:hover svg {
-	filter: drop-shadow(1px 1px 1px rgba(0,0,0,1));
+	transform: scale(1.1);
 }
 
 .hackerrank path {
@@ -96,7 +100,7 @@ main > .tagline {
 }
 
 .hackerrank:hover path {
-	fill: greenyellow;
+	fill: rgb(184, 206, 203);
 }
 
 /* Theme */
@@ -107,7 +111,7 @@ main {
 	background-image: url(../assets/eagle.svg);
 	background-position: center 40%;
 	background-repeat: no-repeat; 
-	background-size: 80%;
+	background-size: 95%;
 }
 
 .icons-social a {
@@ -119,9 +123,13 @@ main {
 	fill: #FAFAFA;
 }
 
-a:hover {
-	color: greenyellow;
-	text-shadow: black 1px 1px 1px;
+i {
+	transition: 0.3s;
+}
+
+a:hover i {
+	color: rgb(184, 206, 203);
+	transform: scale(1.1)
 }
 
 /* Projects */
@@ -157,12 +165,16 @@ a:hover {
 	transition: .3s;
 }
 
-.project:hover svg {
-	filter: drop-shadow(1px 1px 1px rgba(0,0,0,1));
+/* .project svg {
+	transition: 0.3s;
 }
 
+.project:hover svg {
+	transform: scale(1.1);
+} */
+
 .project:hover path {
-	fill: greenyellow;
+	fill: rgb(184, 206, 203);
 }
 
 .project-break {
@@ -196,10 +208,6 @@ a:hover {
 @media screen and (max-width: 520px) and (min-width: 394px) {
 	main > .intro {
 		font-size: 2.5em;
-	}
-
-	main {
-		background-size: 95%;
 	}
 }
 
