@@ -48,8 +48,9 @@ main > .intro {
 	font-size: 3.75em;
 	font-weight: 600;
 	letter-spacing: 2px;
-	margin: 0;
+	margin: 0 0 .25em 0;
 	padding: 0;
+	line-height: 1.1;
 }
 
 main > .tagline {
@@ -189,5 +190,21 @@ a:hover {
 	.current h2 {
 		display: inline-block;
 		text-align: left;
+	}
+}
+
+@media screen and (max-width: 520px) and (min-width: 394px) {
+	main > .intro {
+		font-size: 2.5em;
+	}
+
+	main {
+		background-size: 95%;
+	}
+}
+
+@media screen and (max-width: 589px) and (min-width: 576px) {
+	main > .intro {
+		font-size: 3.5em;
 	}
 }
