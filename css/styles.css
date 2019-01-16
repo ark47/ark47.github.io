@@ -60,7 +60,9 @@ main > .tagline {
 	letter-spacing: 1.5px;
 }
 
-.break {
+.icons-social::before {
+	display: block;
+	content: '';
 	width: 13rem;
 	height: 2px;
 	background-color: #FAFAFA;
@@ -155,6 +157,16 @@ a:hover i {
 	display: inline-block;
 }
 
+.current h2::after {
+	display: block;
+	content: '';
+	width: 90%;
+	height: 2px;
+	background-color: #FAFAFA;
+	text-align: center;
+	margin: .5rem auto 0 auto;
+}
+
 .project svg {
 	margin: .5rem .25rem 0 .25rem;
 	width: 2rem;
@@ -183,6 +195,7 @@ a:hover i {
 	background-color: #FAFAFA;
 	text-align: center;
 	margin: .5rem auto 0 auto;
+	display: none;
 }
 
 @media (max-height: 559px) {
@@ -202,6 +215,10 @@ a:hover i {
 	.current h2 {
 		display: inline-block;
 		text-align: left;
+	}
+
+	.current h2::after {
+		content: none;
 	}
 }
 
