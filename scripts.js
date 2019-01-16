@@ -1,10 +1,15 @@
-// console.log(tag.textContent);
+let tags = document.querySelector('.tags');
+let silly = document.querySelector('.sillyness');
+let rotate = true;
 
-let tag = document.querySelector('.tagline')
-let wide = window.innerWidth;
-
-if (wide < 482) {
-    tag.textContent = 'Developer | Designer | Artist';
-} else {
-    tag.textContent = 'Developer | Designer | Artist | 4th Grade Spelling Bee Champion'
-}
+setInterval(() => {
+    if (rotate) {
+        rotate = false;
+        tags.style.opacity = 0;
+        silly.style.opacity = 1;
+    } else if (!rotate) {
+        rotate = true;
+        tags.style.opacity = 1;
+        silly.style.opacity = 0;
+    }
+}, 4000);

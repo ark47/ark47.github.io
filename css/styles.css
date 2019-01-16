@@ -58,6 +58,20 @@ main > .tagline {
 	margin: 0;
 	font-weight: 100;
 	letter-spacing: 1.5px;
+	height: 1.25rem;
+	overflow: hidden;
+}
+
+.tags {
+	transform: translate(0, 0);
+	transition: 0.3s ease-in;
+	opacity: 1;
+}
+
+.sillyness {
+	transform: translate(0, -100%);
+	transition: 0.3s ease-in;
+	opacity: 0;
 }
 
 .icons-social::before {
