@@ -67,7 +67,7 @@ main > .tagline {
 	height: 2px;
 	background-color: #FAFAFA;
 	text-align: center;
-	margin: 1.25rem auto 0 auto;
+	margin: 1.25rem auto .25rem auto;
 }
 
 .icons-social i {
@@ -84,27 +84,6 @@ main > .tagline {
 	width: 2em;
 }
 
-.hackerrank {
-	padding: 10px 10px 10px 0;
-}
-
-.hackerrank svg {
-	transition: 0.2s;
-}
-
-.hackerrank:hover svg {
-	transform: scale(1.1);
-}
-
-.hackerrank path {
-	fill: #FAFAFA;
-	transition: .3s;
-}
-
-.hackerrank:hover path {
-	fill: rgb(184, 206, 203);
-}
-
 /* Theme */
 
 main {
@@ -117,21 +96,25 @@ main {
 }
 
 .icons-social a {
-	color: #FAFAFA;
+	margin: 0 .25em;
+	font-size: 2em;
+}
+
+.icons-social a svg {
 	transition: .3s;
 }
 
 .icons-social a svg path {
+	transition: 0.3s;
 	fill: #FAFAFA;
 }
 
-i {
-	transition: 0.3s;
+.icons-social a:hover svg {
+	transform: scale(1.1)
 }
 
-a:hover i {
-	color: rgb(184, 206, 203);
-	transform: scale(1.1)
+.icons-social a:hover svg path {
+	fill: rgb(184, 206, 203);
 }
 
 /* Projects */
