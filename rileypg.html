@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RileyPG</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/rileypg.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="update invisible">
+        <p></p>
+    </div>
+    <div class="rpg">
+        <h1>RileyPG</h1>
+    </div>
+    <div class="total">1</div>
+    <div class="container">
+        <div class="grid-item one">
+            <div id="push-ups" class="active">
+                Push-Ups
+                <div class="talent-points">0</div>
+                <div class="percent"><span>0</span>%</div>
+            </div>
+        </div>
+        <div class="grid-item two">
+            <div id="dips" class="inactive">
+                Dips
+                <div class="talent-points">0</div>
+                <div class="percent"><span>0</span>%</div>
+            </div>
+        </div>
+        <div class="grid-item three">
+            <div id="machine-press" class="inactive">
+                Machine Press
+                <div class="talent-points">0</div>
+                <div class="percent"><span>0</span>%</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div id="db-press" class="inactive">
+                Dumbell Press
+                <div class="talent-points">0</div>
+                <div class="percent"><span>0</span>%</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div id="cable-flys" class="inactive">
+                Cable Flys
+                <div class="talent-points">0</div>
+                <div class="percent"><span>0</span>%</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div id="bench-press" class="inactive">
+                Bench Press
+                <div class="talent-points">0</div>
+                <div class="percent"><span>0</span>%</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div id="db-pullover" class="inactive">
+                Dumbell Pull Over
+                <div class="talent-points">0</div>
+                <div class="percent"><span>0</span>%</div>
+            </div>
+        </div>
+    </div>
+    <div class="selection">
+            <div class="selectdiv">
+                <select>
+                        <option value="Push Ups">Push Ups</option>
+                </select>
+            </div>
+            <input id="weight" type="number" name="weight" placeholder="weight">
+            <input id="reps" type="number" name="reps" placeholder="reps">
+            <input id="submit" type="submit" value="Submit">
+        </div>
+    <script src="./scripts/rileypg.js"></script>
+</body>
+</html>
