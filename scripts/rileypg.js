@@ -119,7 +119,7 @@ const submitter = () => {
           break;
         default:
             statusBox.style.top = 0;
-            status.textContent = 'You broke the app!';
+            return status.textContent = 'Please select an exercise.';
     }
     weight.value = '';
     reps.value = '';
